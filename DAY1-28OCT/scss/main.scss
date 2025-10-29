@@ -1,0 +1,272 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+//@import 'partials/footer';
+
+// main.scss
+
+
+// 2. Component or section files next
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $base-font-family;
+}
+
+.header-container {
+    background: $bg-gray;
+}
+
+.centered-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: $text-color;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.primary-button {
+    background: #4CAF4F;
+    color: #fff;
+}
+
+.secondary-button {
+    background: transparent;
+    color: #4CAF4F;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section {
+    padding: 22px 0;
+}
+
+.heading-1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.para {
+    font-size: 16px;
+    color: #717171;
+}
+
+.care-desc {
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.care-container {
+    padding-top: 48px;
+}
+
+.care-image-container {
+    position: relative;
+    width: 368px;
+}
+
+.care-text {
+    position: absolute;
+    background: #F5F7FA;
+    width: 80%;
+    left: 10%;
+    height: 135px;
+    top: 68%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.care-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+footer {
+  background-color: $footer-bg;
+  color: $text-color;
+  ;
+padding: 64px 165px;
+  width: auto;
+  height: auto;
+
+  .footer-content {
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: silver;
+    font: inter;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.footer-col h1,h4 {
+    margin-bottom: 24px;
+}
+
+.footer-brand img{
+    margin-bottom: 42px;
+}
+
+.footer-socials{
+    margin-top:40px;
+}
+.footer-socials a{
+    margin-right:10px;
+    
+    gap: 10px;
+}
+
+.email-form {
+  // Use Flexbox to align the input and button horizontally
+  display: flex; 
+  width: 100%; // Takes up the full width
+  max-width: 350px; // A typical width limit for a newsletter form
+  border-radius: 8px; // Rounded corners for the entire box
+  overflow: hidden; // Ensures contents stay within the border-radius
+  background-color: #3f4549; // Dark gray background color from the image
+}
+
+.email-form input[type="email"] {
+  flex-grow: 1; // Allows the input field to take up all available space
+  padding: 12px 15px;
+  border: none;
+  background-color: transparent; // Match the parent form's color
+  color: #ffffff; // White text color for the placeholder and input text
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6); // Slightly faded white for placeholder text
+  }
+}
+
+  .email-form button[type="submit"] {
+  // Styles for the submit button (paper airplane icon)
+  padding: 12px 15px;
+  border: none;
+  background-color: transparent; // Match the parent form's color
+  cursor: pointer;
+  
+  // Icon styling (assuming Font Awesome classes 'fas fa-paper-plane')
+  .fas.fa-paper-plane {
+    color: #ffffff; // White icon color
+    font-size: 18px;
+    margin-top: 2px; // Minor adjustment for vertical centering
+  }
+}
+
+.client-section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+// scss/partials/_feature.scss
+
+.feature-section {
+  padding: 80px 0; // Add vertical spacing for the section
+  background-color: #ffffff; // White background
+}
+
+.feature-content {
+  display: flex;
+  align-items: center; // Vertically centers the content in the middle
+  gap: 50px; // Space between the image column and the text column
+}
+
+.feature-image-column,
+.feature-text-column {
+  // Distribute space: We'll give the image column slightly less space (e.g., 40%) 
+  // and the text column slightly more (e.g., 60%) of the available width.
+  flex: 1 1 45%; 
+}
+
+.feature-illustration {
+  max-width: 100%; // Ensures the image scales down on smaller screens
+  height: auto;
+  display: block; // Removes extra space below the image
+}
+// scss/partials/_feature.scss
+
+.feature-section {
+  padding: 80px 0; // Add vertical spacing for the section
+  background-color: #ffffff; // White background
+}
+
+.feature-content {
+  display: flex;
+  align-items: center; // Vertically centers the content in the middle
+  gap: 50px; // Space between the image column and the text column
+}
+
+.feature-image-column,
+.feature-text-column {
+  // Distribute space: We'll give the image column slightly less space (e.g., 40%) 
+  // and the text column slightly more (e.g., 60%) of the available width.
+  flex: 1 1 45%; 
+}
+
+.feature-illustration {
+  max-width: 100%; // Ensures the image scales down on smaller screens
+  height: auto;
+  display: block; // Removes extra space below the image
+}
+
+.client-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+// .feature-content{
+//     display: flex;
+//     align-items: center;
+//     gap: 50px;
+// }
