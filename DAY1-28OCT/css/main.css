@@ -179,7 +179,6 @@ ul li a {
   padding: 12px 15px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 .email-form button[type=submit] .fas.fa-paper-plane {
   color: #ffffff;
@@ -191,27 +190,13 @@ ul li a {
   padding: 50px 20px;
   text-align: center;
 }
-
-.feature-section {
-  padding: 80px 0;
-  background-color: #ffffff;
+.client-section h1 {
+  margin-bottom: 5px;
 }
-
-.feature-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.feature-image-column,
-.feature-text-column {
-  flex: 1 1 45%;
-}
-
-.feature-illustration {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.client-section p {
+  color: gray;
+  font-size: 11px;
+  margin-bottom: 10px;
 }
 
 .feature-section {
@@ -234,13 +219,42 @@ ul li a {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.feature-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.feature-image-column,
+.feature-text-column {
+  flex: 1 1 45%;
+}
+
+.feature-illustration {
+  padding-left: 68px;
+  height: 174px;
+  width: auto;
+}
+
+.feature-paragraph {
+  color: gray;
+  font-size: 8px;
+  margin-top: 5px;
+  margin-bottom: 11px;
 }
 
 .client-logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 127px;
 }
 
 /*# sourceMappingURL=main.css.map */
