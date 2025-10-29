@@ -1,2 +1,1 @@
-This is repo for daily assignment update 
-kmkmcasdkmckmsad
+This is repo for daily task update
