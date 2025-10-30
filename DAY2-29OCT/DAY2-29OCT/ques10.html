@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student marks Management System</h1>
+    <button id="addStudentBtn">Add Student</button>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject 1</th>
+                <th>Subject 2</th>
+                <th>Subject 3</th>
+                <th>Subject 4</th>
+                <th>Subject 5</th>
+                <th>Total</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        var students=[];
+
+        window.onLoad=function(){
+            var stored=localStorage.getItem("students");
+            if(stored){
+                students=JSON.parse(stored);
+                renderTable();
+            }
+        }
+
+        document.getElementById('addStudentBtn').onclick=function(){
+            addStudent();
+        }
+
+        function addStudent(){
+            var name=prompt("Enter student name:");
+            if(!name || name.trim()==""){
+                alert("Name cannot be empty");
+                return;
+            }
+            var marks=[];
+            for (let i = 1; i <=5; i++) {
+                var mark=prompt("Enter marks for Subject "+i+"(0-100):");
+                mark=parseFloat(mark);
+                if(isNaN(mark) || mark<0 || mark>100){
+                    alert("Invalid marks for Subject "+i);
+                    return;
+                }
+                marks.push(mark)
+                
+            }
+            var total=calculateTotal(marks);
+            function calculateTotal(marks){
+                var sum=0;
+                for (let i = 0; i < 5; i++) {
+                    sum+=marks[i];
+                }
+                return sum;
+            }
+
+            var average=total/marks.length;
+
+
+            var student={
+                name:name.trim(),
+                marks:marks,
+                total:total,
+                average:average
+            };
+            students.push(student);
+            localStorage.setItem('students',JSON.stringify(students));
+            renderTable();
+            
+        }
+
+        function renderTable(){
+            var tbody=document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+            tbody.innerHTML="";
+            for (let i = 0; i< students.length; i++) {
+                var row=document.createElement('tr');
+
+                //name
+                var tdName=document.createElement('td');
+                tdName.textContent=students[i].name;
+                row.appendChild(tdName);
+
+                //marks
+                for (let j = 0; j < 5; j++) {
+                    var tdMark=document.createElement('td');
+                    tdMark.textContent=students[i].marks[j];
+                    row.appendChild(tdMark);
+                }
+
+                //total
+                var tdTotal=document.createElement('td');
+                tdTotal.textContent=students[i].total;
+                row.appendChild(tdTotal);
+
+                //average
+                var tdAverage=document.createElement('td');
+                tdAverage.textContent=students[i].average.toFixed(2);
+                row.appendChild(tdAverage);
+
+                tbody.appendChild(row);
+
+                
+            }
+        }
+
+
+    </script>
+</body>
+</html>
