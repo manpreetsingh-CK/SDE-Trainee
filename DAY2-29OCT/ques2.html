@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myDiv {
+            width:400px;
+            height:200px;
+            border:2px solid black;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <h1>move mouse in to change color </h1>
+    </div>
+
+    <script>
+        var div=document.getElementById("myDiv");
+
+        if(div){
+            div.addEventListener("mouseover",function(){
+            div.style.backgroundColor="green";
+        });
+
+        div.addEventListener("mouseout",function(){
+            div.style.backgroundColor="red";
+        });
+        }else{
+            alert("Element not found");
+        }
+        
+    </script>
+</body>
+</html>
