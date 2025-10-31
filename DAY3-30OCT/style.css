@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f8f8f8;
+}
+#productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  width: 200px;
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.product-card.highlight {
+  background: #eaf4ff;
+  transform: scale(1.03);
+}
+button {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.Highlight {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  border-color: #3b82f6; 
+  background-color: #fcfeff;
+  cursor: pointer;
+}
