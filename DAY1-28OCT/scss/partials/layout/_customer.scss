@@ -1,0 +1,49 @@
+.customer-container {
+  background-color: #f5f7fa;
+  display: flex;
+
+  align-items: center;
+
+  width: 1440;
+  height: 390;
+
+  opacity: 1;
+  padding-top: 32px;
+  padding-right: 144px;
+  padding-bottom: 32px;
+  padding-left: 144px;
+  gap: 78px;
+}
+
+.customer-text {
+  p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    color: #717171;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    color: #4caf4f;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 8px;
+  }
+  h3 {
+    color: #89939e;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+}

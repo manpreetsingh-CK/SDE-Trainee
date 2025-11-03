@@ -1,0 +1,90 @@
+.achievements {
+  width: 1440;
+  height: 288;
+  justify-content: space-between;
+  
+  opacity: 1;
+  padding-top: 64px;
+  padding-right: 144px;
+  padding-bottom: 64px;
+  padding-left: 144px;
+}
+
+.achievement-container {
+  gap:72px;
+  width: 1440;
+  height: 288;
+  background-color: #F5F7FA;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  padding-top: 64px;
+  padding-right: 144px;
+  padding-bottom: 64px;
+  padding-left: 144px;
+}
+.achievements-stats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 2 columns
+  grid-template-rows: repeat(2, 1fr); // 2 rows
+  gap: 40px;
+
+  .stat-item {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    width: 255;
+    height: 60;
+    
+    opacity: 1;
+    gap: 16px;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+    h3 {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 28px;
+      
+      color: #4d4d4d;
+      line-height: 36px;
+      letter-spacing: 0%;
+    }
+    p {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      color: #717171;
+      line-height: 24px;
+      letter-spacing: 0%;
+    }
+  }
+}
+
+.achievements-text {
+  padding-right: 10px;
+  h1 {
+    color: #4d4d4d;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0%;
+  }
+  span {
+    display: block;
+    color: #4caf4f;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0%;
+  }
+  p {
+    color: #18191f;
+  }
+}

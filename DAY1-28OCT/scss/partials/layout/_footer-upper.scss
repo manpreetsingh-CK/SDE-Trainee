@@ -1,0 +1,54 @@
+.footer-upper {
+  background-color: #f5f7fa;
+
+  /* Frame 16 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 32px;
+
+  width: 1440px;
+  max-height: 300px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  h2 {
+    font-weight: 600;
+
+    font-size: 64px;
+    color: #263238;
+    line-height: 76px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  button {
+    color: white;
+    width: 90;
+    height: 24;
+    
+    opacity: 1;
+
+    
+    padding-top: 14px;
+    padding-right: 32px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    gap: 8px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

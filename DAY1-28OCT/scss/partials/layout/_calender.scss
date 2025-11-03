@@ -1,0 +1,47 @@
+
+
+.calender-container {
+  display: flex;
+  
+  max-width: 1440;
+  max-height: 433.3990173339844;
+  justify-content: space-between;
+  gap: 49px;
+  opacity: 1;
+  padding: 48px 144px;
+
+  .calender-text {
+    padding: 62px 0px;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0%;
+      color: #4d4d4d;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      color: #717171;
+      line-height: 20px;
+      letter-spacing: 0%;
+      margin-bottom: 32px;
+    }
+    button {
+      background-color: #4caf4f;
+      padding: 14px 32px;
+      color: white;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      border: none;
+    }
+  }
+}
