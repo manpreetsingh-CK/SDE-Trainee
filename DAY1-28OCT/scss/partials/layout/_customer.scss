@@ -1,17 +1,14 @@
 .customer-container {
-  background-color: #f5f7fa;
-  display: flex;
-
-  align-items: center;
+  background-color: $bg-gray;
+  @include flex-align-center;
+  
 
   width: 1440;
   height: 390;
 
   opacity: 1;
-  padding-top: 32px;
-  padding-right: 144px;
-  padding-bottom: 32px;
-  padding-left: 144px;
+  padding: 32px 144px;
+  
   gap: 78px;
 }
 
@@ -20,17 +17,17 @@
     font-weight: 500;
     font-style: Medium;
     font-size: 16px;
-    color: #717171;
+    color: $text-gray;
     line-height: 24px;
     letter-spacing: 0%;
     vertical-align: middle;
     margin-bottom: 16px;
   }
   h2 {
-    font-weight: 600;
-    font-style: Semi Bold;
+    font-weight:$semi-bold;
+    
     font-size: 20px;
-    color: #4caf4f;
+    color: $primary-color;
     line-height: 28px;
     letter-spacing: 0%;
     vertical-align: middle;

@@ -10,6 +10,10 @@
 * {
   margin: 0;
   padding: 0;
+ 
+}
+a{
+  text-decoration: none;
 }
 
 body {
@@ -46,13 +50,13 @@ body {
 }
 
 .primary-button {
-  background: #4caf4f;
+  background: $primary-color;
   color: #fff;
 }
 
 .secondary-button {
   background: transparent;
-  color: #4caf4f;
+  color: $primary-color;
 }
 
 .flex-center {
@@ -140,14 +144,36 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: silver;
-  font: inter;
+  color: #f5f7fa;
+  display: flex;
   font-size: 14px;
   padding-bottom: 12px;
+
+  font-weight: 400;
+  font-style: Regular;
+
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 .footer-col h1,
 h4 {
   margin-bottom: 24px;
+}
+.footer-copyight {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.footer-col h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 28px;
+  letter-spacing: 0%;
 }
 
 .footer-brand img {
@@ -160,7 +186,12 @@ h4 {
 .footer-socials a {
   margin-right: 10px;
 
-  gap: 10px;
+  
+}
+.footer-socials a img {
+  border: 5px solid grey;
+  border-radius: 15px;
+  background-color: transparent;
 }
 
 .email-form {
@@ -200,13 +231,13 @@ h4 {
   padding: 50px 20px;
   text-align: center;
   h1 {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #4d4d4d;
   }
   p {
     color: gray;
     font-size: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 }
 
@@ -243,6 +274,40 @@ h4 {
   background-color: #ffffff;
 }
 
+.feature-heading {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 36px;
+  margin-bottom: 16px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #4d4d4d;
+}
+.feature-paragraph {
+  font-weight: 400;
+  color: #717171;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: gray;
+  font-size: 8px;
+  margin-top: 5px;
+  margin-bottom: 32px;
+}
+.feature-button {
+  width: 151;
+  height: 52;
+
+  opacity: 1;
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 32px;
+  padding-bottom: 14px;
+  padding-left: 32px;
+  border-radius: 4px;
+}
+
 .feature-container {
   display: flex;
   align-items: center;
@@ -251,6 +316,11 @@ h4 {
   height: 433;
 
   opacity: 1;
+
+  justify-content: space-between;
+
+  padding-right: 144px;
+  padding-left: 144px;
 }
 
 .feature-image-column,
@@ -259,15 +329,8 @@ h4 {
 }
 
 .feature-illustration {
-  padding-left: 68px;
-  height: 174px;
-  width: auto;
-}
-.feature-paragraph {
-  color: gray;
-  font-size: 8px;
-  margin-top: 5px;
-  margin-bottom: 11px;
+  height: 442px;
+  width: 433px;
 }
 
 .client-logo-container {
@@ -275,4 +338,5 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 127px;
+  margin-bottom: 40px;
 }

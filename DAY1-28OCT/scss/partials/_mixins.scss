@@ -12,4 +12,23 @@
   flex-direction: $direction;
   gap: $gap;
 }
+
+@mixin flex-align-center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex{
+  display: flex;
+}
+
+@mixin flex-space-between{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-justify-center{
+  display: flex;
+  justify-content: center;
+}
+ 
                                                                                                                                                                                                                                       
